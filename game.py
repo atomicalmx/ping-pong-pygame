@@ -24,7 +24,7 @@ bgm = pygame.mixer.music.load(bgm_file)
 bgm = pygame.mixer.music.play()
 bgm = pygame.mixer.music.set_volume(0.5)
 
-bg_file = pygame.image.load("./sprites/bg3.png")
+bg_file = pygame.image.load("./sprites/bg.png")
 background = pygame.transform.scale(bg_file,(682,495))
 
 ### Functions
@@ -62,7 +62,7 @@ class Player(GameSprite):
 
 ### Building objects
 
-ball_img = "./sprites/ball_2.png"
+ball_img = "./sprites/ball.png"
 player1_img = "./sprites/mabel.png"
 player2_img = "./sprites/alice.png"
 player_speed = 6
@@ -101,4 +101,5 @@ while game_run:
 
           # Able to move stuff
           FPS.tick(60)
+
           pygame.display.update() 
